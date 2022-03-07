@@ -86,10 +86,6 @@ public class Point {
 		this.mode = mode;
 	}
 
-//	Clears the neighbours
-	public void clearNeighbours(){
-		neighbors.clear();
-	}
 
 //	Sets current rules based on input string
 	public void setRules(String rule){

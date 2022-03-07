@@ -91,13 +91,6 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 		}
 	}
 
-//	Deletes neighbours from all points
-	private void clearNeighbours(){
-		for (int x = 0; x < points.length; ++x)
-			for (int y = 0; y < points[x].length; ++y)
-				points[x][y].clearNeighbours();
-	}
-
 //	Sets mode for all points
 	private void setPointsMode(String mode){
 		for (int x = 0; x < points.length; ++x)
@@ -205,7 +198,6 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 	public void setMode(String mode){
 		if (!Objects.equals(mode, this.mode)){
 			this.mode = mode;
-			this.clearNeighbours();
 			this.clear();
 			this.initialize(points.length, points[0].length);
 			this.setPointsMode(mode);
