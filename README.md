@@ -1,6 +1,8 @@
 # Modelling of Discrete Systems
 This repository contains my solutions to the following handouts from Modelling of Discrete Systems course on AGH UST:
 
+*Note: parts of the code were created by the teachers. Most often we were tasked with implementations of the algotighms and some UI changes*
+
 # Lab 1 - Game Of Life and Rain
 
 ### Game of life

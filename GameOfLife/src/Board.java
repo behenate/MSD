@@ -16,7 +16,7 @@ import javax.swing.event.MouseInputListener;
 
 public class Board extends JComponent implements MouseInputListener, ComponentListener {
 	private static final long serialVersionUID = 1L;
-	private Point[][] points;
+	private Point[][] points = {};
 	private int size = 14;
 //	Determines the current simulation mode
 	private String mode = "standard";
