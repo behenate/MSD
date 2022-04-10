@@ -29,7 +29,11 @@ public class GUI extends JPanel implements ActionListener, ChangeListener {
 
     public void initialize(Container container) {
         container.setLayout(new BorderLayout());
-        container.setSize(new Dimension(1024, 768));
+        container.setSize(new Dimension(1800, 220));
+
+        drawType = new JComboBox<Integer>(Point.types);
+        drawType.addActionListener(this);
+        drawType.setActionCommand("drawType");
 
         JPanel buttonPanel = new JPanel();
         JPanel modePanel = new JPanel();
@@ -56,17 +60,15 @@ public class GUI extends JPanel implements ActionListener, ChangeListener {
         pred.addChangeListener(this);
         pred.setValue(maxDelay - timer.getDelay());
 
+
         buttonPanel.add(start);
         buttonPanel.add(clear);
+        buttonPanel.add(drawType);
         buttonPanel.add(pred);
 
-        modePanel.add(const_mode);
-        modePanel.add(nagel_mode);
-
-        board = new Board(1024, 768 - buttonPanel.getHeight());
+        board = new Board(1800, 220 - buttonPanel.getHeight());
         container.add(board, BorderLayout.CENTER);
         container.add(buttonPanel, BorderLayout.SOUTH);
-        container.add(modePanel, BorderLayout.NORTH);
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -96,10 +98,6 @@ public class GUI extends JPanel implements ActionListener, ChangeListener {
             } else if (command.equals("drawType")) {
                 int newType = (Integer) drawType.getSelectedItem();
                 board.editType = newType;
-            }else if (command.equals("const")){
-                board.setMode(0);
-            }else if (command.equals("nagel")){
-                board.setMode(1);
             }
 
         }

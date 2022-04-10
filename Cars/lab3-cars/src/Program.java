@@ -10,7 +10,7 @@ public class Program extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gof = new GUI(this);
         gof.initialize(this.getContentPane());
-        this.setSize(1024, 768);
+        this.setSize(1800, 220);
         this.setVisible(true);
     }
 
