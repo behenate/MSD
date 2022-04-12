@@ -20,7 +20,7 @@ Application creates a simple rain simulation using cellular automaton.
 
 ### A demo of the application:
 
-<img src="GameOfLife/demo.gif" alt="demo" style="zoom:50%;" />
+<img src="GameOfLife/demo.gif" alt="demo" style="width:50%;" />
 
 # Lab 2 - Sound Wave
 
@@ -34,4 +34,26 @@ There are three kinds of placeable cells:
 
 ### A demo of the application:
 
-<img src="SoundWave/sample.gif" alt="demo" style="zoom:50%;" />
+<img src="SoundWave/sample.gif" alt="demo" style="width:50%;" />
+
+# Lab 5 - Simple Pedestrians
+
+### A simple force field based pedestrian simulator using Cellular Automaton
+
+Each of the exits creates a force field, which the pedestrian uses for navigating to it
+
+Application supports 
+
+- Moore's neighborhood
+- Von Neumann's neighborhood
+
+There are four kinds of  cells:
+
+-  0 - White cells - Represent the Floor
+- 1 - Red cells - Represent a wall
+- 2 - Green cells - Each cell is an exit
+- 3 - Blue cells - Pedestrian
+
+### A demo of the application:
+
+<img src="Pedestrians/imgs/demo.gif" alt="demo" style="width:50%;" />
