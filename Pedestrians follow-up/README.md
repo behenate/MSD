@@ -1,4 +1,4 @@
-# Pedestrians-follow-up
+# Lab 6 - Pedestrians-follow-up
 
 ## A force field based pedestrian simulator using Cellular Automaton
 
