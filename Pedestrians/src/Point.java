@@ -56,8 +56,11 @@ public class Point {
             return;
         Point minNeigh = findMinNeigh(false);
         this.isPedestrian = false;
-        if (minNeigh.type != 2)
+        if (minNeigh.type != 2){
+            this.type = 0;
+            minNeigh.type = 3;
             minNeigh.isPedestrian = true;
+        }
         minNeigh.hasMoved = true;
     }
 

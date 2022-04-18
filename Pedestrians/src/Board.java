@@ -33,6 +33,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
         for (int x = 1; x < points.length - 1; ++x)
             for (int y = 1; y < points[x].length - 1; ++y)
                 points[x][y].move();
+
         this.repaint();
     }
 
@@ -51,7 +52,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
         for (int x = 0; x < points.length; ++x)
             for (int y = 0; y < points[x].length; ++y)
                 points[x][y] = new Point();
-
+        fillNeighbors();
     }
     private void clearNeighbors(){
         for (int x = 1; x < points.length - 1; ++x) {
@@ -149,6 +150,8 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
         clearNeighbors();
         this.neighType = neighType;
         fillNeighbors();
+        calculateField();
+        repaint();
     }
     public void mouseClicked(MouseEvent e) {
         int x = e.getX() / size;
