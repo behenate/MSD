@@ -18,7 +18,7 @@ Features:
 
 Application creates a simple rain simulation using cellular automaton.
 
-### A demo of the application:
+### Demo of the application:
 
 <img src="GameOfLife/demo.gif" alt="demo" style="width:50%;" />
 
@@ -32,7 +32,7 @@ There are three kinds of placeable cells:
 - Red cells - Represent a wall that the sound can't pass
 - Green cells - send out a sound wave periodically
 
-### A demo of the application:
+### Demo of the application:
 
 <img src="SoundWave/sample.gif" alt="demo" style="width:50%;" />
 
@@ -54,6 +54,6 @@ There are four kinds of  cells:
 - 2 - Green cells - Each cell is an exit
 - 3 - Blue cells - Pedestrian
 
-### A demo of the application:
+### Demo of the application:
 
 <img src="Pedestrians/imgs/demo.gif" alt="demo" style="width:50%;" />

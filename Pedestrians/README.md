@@ -16,6 +16,6 @@ There are four kinds of  cells:
 - 2 - Green cells - Each cell is an exit
 - 3 - Blue cells - Pedestrian
 
-### A demo of the application:
+### Demo of the application:
 
 <img src="imgs/demo.gif" alt="demo" style="width:70%;" />
